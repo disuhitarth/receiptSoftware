@@ -154,7 +154,7 @@
     .tab.active { color: #60a5fa; border-bottom-color: #2563eb; }
 
     /* ── Tab panels ── */
-    .tab-panel { display: none; flex: 1; overflow: auto; }
+    .tab-panel { display: none; flex: 1; overflow: auto; min-height: 0; }
     .tab-panel.active { display: flex; flex-direction: column; }
 
     /* SVG preview */
@@ -171,7 +171,7 @@
       overflow: hidden;
       max-width: 100%;
     }
-    #preview-panel svg { display: block; max-width: 100%; }
+    #preview-panel svg { display: block; max-width: 100%; height: auto; }
     #preview-empty {
       color: #94a3b8;
       font-size: 14px;
