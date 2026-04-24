@@ -12,7 +12,7 @@ app.post('/api/preview', (req, res) => {
     const svg = receiptline.transform(markup, {
       cpl: parseInt(cpl) || 42,
       encoding: encoding || 'cp437',
-      spacing: false,
+      spacing: true,
       cutting: cutting !== false,
       command: 'svg',
     });
@@ -28,7 +28,7 @@ app.post('/api/escpos', (req, res) => {
     const binary = receiptline.transform(markup, {
       cpl: parseInt(cpl) || 42,
       encoding: encoding || 'cp437',
-      spacing: false,
+      spacing: true,
       cutting: cutting !== false,
       command: 'escpos',
     });
